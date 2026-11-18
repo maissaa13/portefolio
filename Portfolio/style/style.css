@@ -1,0 +1,394 @@
+
+/* ==========================
+   BASE DU SITE
+========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #100d1b;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* Fond lumineux */
+
+body::before {
+    content: "";
+    position: fixed;
+    width: 450px;
+    height: 450px;
+    background: #a13be0;
+    filter: blur(180px);
+    opacity: 0.15;
+    top: 10%;
+    right: 5%;
+    z-index: -1;
+    pointer-events: none;
+}
+
+
+/* ==========================
+   MENU LATERAL
+========================== */
+
+header {
+    width: 250px;
+    height: 100vh;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background: #1c142b;
+    border-right: 1px solid #49305e;
+
+    padding: 30px 20px;
+    z-index: 100;
+
+    display: flex;
+    flex-direction: column;
+}
+
+header h2 {
+    text-align: center;
+    color: #d69aff;
+    margin-bottom: 50px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    margin: 18px 0;
+}
+
+nav a {
+    display: block;
+    padding: 12px;
+
+    color: #d1c9df;
+    text-decoration: none;
+    font-size: 16px;
+
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #8239b9;
+    color: white;
+    transform: translateX(8px);
+}
+
+.menu-footer {
+    margin-top: auto;
+    text-align: center;
+    color: #b98bdc;
+}
+
+
+/* ==========================
+   CONTENU DES PAGES
+========================== */
+
+main {
+    margin-left: 250px;
+    min-height: 100vh;
+}
+
+section {
+    min-height: 100vh;
+    padding: 70px 8%;
+}
+
+.contenu-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section h1 {
+    font-size: 42px;
+    color: #d69aff;
+    margin-bottom: 30px;
+}
+
+section h2 {
+    color: #d69aff;
+    margin-bottom: 15px;
+}
+
+section h3 {
+    color: #e6c7ff;
+    margin-bottom: 15px;
+}
+
+section p {
+    color: #d1c9df;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.sous-titre {
+    color: #c77dff;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+
+/* ==========================
+   ACCUEIL
+========================== */
+
+.accueil {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+.contenu {
+    max-width: 600px;
+}
+
+.contenu h1 {
+    font-size: 48px;
+}
+
+.contenu h2 {
+    font-size: 21px;
+}
+
+.accueil img {
+    width: 300px;
+    max-width: 100%;
+    border-radius: 25px;
+    border: 2px solid #bd65e9;
+    box-shadow: 0 0 30px #8738bd60;
+    transition: 0.4s;
+}
+
+.accueil img:hover {
+    transform: scale(1.05);
+}
+
+
+/* ==========================
+   BOUTONS
+========================== */
+
+.bouton {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 25px;
+
+    background: linear-gradient(90deg, #8738bd, #bd65e9);
+    color: white;
+
+    text-decoration: none;
+    border-radius: 30px;
+
+    transition: 0.3s;
+}
+
+.bouton:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px #8738bd70;
+}
+
+
+/* ==========================
+   CARTES
+========================== */
+
+.carte {
+    background: rgba(255,255,255,0.05);
+
+    border: 1px solid rgba(205,150,255,0.2);
+    border-radius: 18px;
+
+    padding: 30px;
+    margin: 20px 0;
+
+    transition: 0.3s;
+}
+
+.carte:hover {
+    transform: translateY(-6px);
+    border-color: #bd65e9;
+    box-shadow: 0 10px 30px #8738bd30;
+}
+
+
+/* ==========================
+   GRILLE COMPETENCES
+========================== */
+
+.grille {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+
+/* ==========================
+   LIENS
+========================== */
+
+main a {
+    color: #d69aff;
+}
+
+main a:hover {
+    color: white;
+}
+
+
+/* ==========================
+   ANIMATION CSS AU SCROLL
+========================== */
+
+/* Animation progressive des cartes
+   Compatible avec les navigateurs récents */
+
+@keyframes apparition {
+    from {
+        opacity: 0;
+        transform: translateY(45px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@supports (animation-timeline: view()) {
+    .carte {
+        animation: apparition linear both;
+        animation-timeline: view();
+        animation-range: entry 0% entry 80%;
+    }
+}
+
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer {
+    margin-left: 250px;
+    padding: 25px;
+    text-align: center;
+    color: #c9a4e7;
+    background: #1c142b;
+}
+
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media screen and (max-width: 900px) {
+
+    header {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    header h2 {
+        margin-bottom: 15px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav li {
+        margin: 5px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    .menu-footer {
+        display: none;
+    }
+
+    main,
+    footer {
+        margin-left: 0;
+    }
+
+    .accueil {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    section {
+        padding: 60px 25px;
+    }
+
+    section h1,
+    .contenu h1 {
+        font-size: 34px;
+    }
+
+    .grille {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Animation de transition visuelle */
+
+main section h1 {
+    animation: apparition 0.8s ease;
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 13px;
+    color: #d1c9df;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+nav a i {
+    width: 20px;
+    height: 20px;
+    color: #bd65e9;
+    stroke-width: 1.7;
+}
+
+nav a:hover {
+    background: rgba(189, 101, 233, 0.15);
+    color: white;
+    transform: translateX(5px);
+}
+
+nav a.active {
+    background-color: #e6d9f2;
+    color: #70449b;
+    font-weight: 600;
+}
+
