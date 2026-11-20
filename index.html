@@ -1,96 +1,287 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 
 <head>
-	<meta charset="utf-8">
-	<title>Portfolio</title>
-	<link href="style/style.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - Mon Portfolio</title>
+    <link href="style/style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
 
-	<header>
-		<h2>Mon Portfolio</h2>
+    <!-- MENU LATERAL -->
 
-		<nav>
-			<ul>
-				<li>
-					<a href="index.html" class="active">
-						<i data-lucide="house"></i>
-						Accueil
-					</a>
-				</li>
+    <header>
+        <h2>Mon Portfolio</h2>
 
-				<li>
-					<a href="profil.html">
-						<i data-lucide="user-round"></i>
-						Profil et parcours
-					</a>
-				</li>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html" class="active">
+                        <i data-lucide="house"></i>
+                        Accueil
+                    </a>
+                </li>
 
-				<li>
-					<a href="competences.html">
-						<i data-lucide="code-xml"></i>
-						Compétences
-					</a>
-				</li>
+                <li>
+                    <a href="profil.html">
+                        <i data-lucide="user-round"></i>
+                        Profil et parcours
+                    </a>
+                </li>
 
-				<li>
-					<a href="projets.html">
-						<i data-lucide="folder-code"></i>
-						Projets
-					</a>
-				</li>
+                <li>
+                    <a href="competences.html">
+                        <i data-lucide="code-xml"></i>
+                        Compétences
+                    </a>
+                </li>
 
-				<li>
-					<a href="veilleTechnologique.html">
-						<i data-lucide="glasses"></i>
-						Veille technologique
-					</a>
-				</li>
+                <li>
+                    <a href="projets.html">
+                        <i data-lucide="folder-code"></i>
+                        Projets
+                    </a>
+                </li>
 
-			</ul>
-		</nav>
-	</header>
+                <li>
+                    <a href="veilleTechnologique.html">
+                        <i data-lucide="glasses"></i>
+                        Veille technologique
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="menu-footer">
+            <p>Portfolio BTS SIO</p>
+            <span>Option SLAM</span>
+        </div>
+    </header>
 
 
-	<main>
-		<section class="accueil">
+    <!-- CONTENU PRINCIPAL -->
 
-			<div class="contenu">
-				<p class="sous-titre">BIENVENUE SUR MON PORTFOLIO</p>
+    <main>
 
-				<h1>Bonjour et bienvenue !</h1>
+        <section class="accueil accueil-moderne">
 
-				<h2>Étudiante en BTS SIO option SLAM</h2>
+            <!-- TEXTE DE PRESENTATION -->
 
-				<p>
-					Passionnée par l'informatique et le développement,
-					je vous présente mon portfolio.
+            <div class="accueil-contenu">
 
-					Vous pourrez découvrir mon parcours,
-					mes compétences, mes réalisations ainsi que
-					ma veille technologique sur la réalité virtuelle.
-				</p>
+                <div class="statut-accueil">
+                    <span class="point-statut"></span>
+                    PORTFOLIO ÉTUDIANT - BTS SIO
+                </div>
 
-				<a href="profil.html" class="bouton">
-					Découvrir mon profil →
-				</a>
-			</div>
+                <p class="sous-titre">
+                    BIENVENUE DANS MON UNIVERS
+                </p>
 
-			<img src="img/code.jpg" alt="Développement informatique">
+                <h1>
+                    Bonjour,<br>
+                    je suis <span>étudiante</span>
+                    <br>en informatique.
+                </h1>
 
-		</section>
-	</main>
+                <h2>
+                    BTS SIO - Option SLAM
+                </h2>
 
-	<footer>
-		<p>2026 - Mon Portfolio</p>
-	</footer>
-	<script src="https://unpkg.com/lucide@latest"></script>
-	<script>
-		lucide.createIcons();
-	</script>
+                <p class="description-accueil">
+                    Passionnée par l'informatique et le développement,
+                    je vous invite à découvrir mon univers à travers
+                    ce portfolio.
+
+                    Retrouvez mon parcours, mes compétences techniques,
+                    mes projets ainsi que ma veille technologique
+                    consacrée à la réalité virtuelle.
+                </p>
+
+                <!-- BOUTONS -->
+
+                <div class="accueil-boutons">
+
+                    <a href="profil.html" class="bouton bouton-principal">
+                        Découvrir mon profil
+                        <i data-lucide="arrow-up-right"></i>
+                    </a>
+
+                    <a href="projets.html" class="bouton bouton-secondaire">
+                        Voir mes projets
+                        <i data-lucide="folder-code"></i>
+                    </a>
+
+                </div>
+
+                <!-- COMPETENCES RAPIDES -->
+
+                <div class="accueil-technologies">
+
+                    <p>MES DOMAINES</p>
+
+                    <div class="technologies-tags">
+                        <span>Développement web</span>
+                        <span>PHP / Java</span>
+                        <span>SQL</span>
+                        <span>Laravel</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- IMAGE -->
+
+            <div class="accueil-visuel">
+
+                <div class="cercle-deco cercle-1"></div>
+                <div class="cercle-deco cercle-2"></div>
+
+                <div class="image-accueil">
+
+                    <img src="img/code.jpg"
+                         alt="Illustration du développement informatique">
+
+                    <div class="image-badge">
+                        <div class="badge-icone">
+                            <i data-lucide="code-2"></i>
+                        </div>
+
+                        <div>
+                            <h3>Développement</h3>
+                            <p>Créativité et programmation</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="decoration-code">
+                    <span>&lt;code&gt;</span>
+                    <span>Créer · Développer · Innover</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SECTION PRESENTATION -->
+
+        <section class="accueil-apercu">
+
+            <div class="apercu-intro">
+                <p class="sous-titre">EXPLORER MON PORTFOLIO</p>
+                <h2>Découvrez mon univers</h2>
+                <p>
+                    Chaque rubrique vous permet d'en apprendre
+                    davantage sur mon parcours et mon travail.
+                </p>
+            </div>
+
+            <div class="apercu-grille">
+
+                <!-- PROFIL -->
+
+                <a href="profil.html" class="apercu-card">
+
+                    <div class="apercu-icone">
+                        <i data-lucide="user-round"></i>
+                    </div>
+
+                    <h3>Mon parcours</h3>
+
+                    <p>
+                        Découvrez mon parcours scolaire,
+                        mes expériences et ma personnalité.
+                    </p>
+
+                    <span>En savoir plus <i data-lucide="arrow-right"></i></span>
+
+                </a>
+
+                <!-- COMPETENCES -->
+
+                <a href="competences.html" class="apercu-card">
+
+                    <div class="apercu-icone">
+                        <i data-lucide="code-xml"></i>
+                    </div>
+
+                    <h3>Mes compétences</h3>
+
+                    <p>
+                        Découvrez les langages, logiciels
+                        et technologies que j'utilise.
+                    </p>
+
+                    <span>En savoir plus <i data-lucide="arrow-right"></i></span>
+
+                </a>
+
+                <!-- PROJETS -->
+
+                <a href="projets.html" class="apercu-card">
+
+                    <div class="apercu-icone">
+                        <i data-lucide="folder-code"></i>
+                    </div>
+
+                    <h3>Mes projets</h3>
+
+                    <p>
+                        Retrouvez mes réalisations et les
+                        différents projets développés.
+                    </p>
+
+                    <span>En savoir plus <i data-lucide="arrow-right"></i></span>
+
+                </a>
+
+                <!-- VEILLE -->
+
+                <a href="veilleTechnologique.html" class="apercu-card">
+
+                    <div class="apercu-icone">
+                        <i data-lucide="glasses"></i>
+                    </div>
+
+                    <h3>Ma veille technologique</h3>
+
+                    <p>
+                        Explorez mes recherches et découvertes
+                        autour de la réalité virtuelle.
+                    </p>
+
+                    <span>En savoir plus <i data-lucide="arrow-right"></i></span>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+
+        <footer>
+            <p>2026 - Mon Portfolio | BTS SIO option SLAM</p>
+        </footer>
+
+    </main>
+
+
+    <!-- ICONES -->
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        lucide.createIcons();
+    </script>
 
 </body>
-
-</html
+</html>
