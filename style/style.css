@@ -392,3 +392,1209 @@ nav a.active {
     font-weight: 600;
 }
 
+
+/* =====================================
+   PAGE PROFIL ET PARCOURS
+===================================== */
+
+.page-parcours {
+    padding: 70px 8%;
+}
+
+/* Introduction */
+
+.intro-parcours {
+    max-width: 750px;
+    margin: 0 auto 65px;
+    text-align: center;
+}
+
+.intro-parcours h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #d69aff, #bd65e9);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.intro-parcours p:not(.sous-titre) {
+    color: #c9bfd6;
+    line-height: 1.8;
+}
+
+/* Titres des parties */
+
+.titre-frise {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 65px 0 35px;
+}
+
+.titre-frise > i {
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+    color: #d69aff;
+    background: #2a1b3d;
+    border: 1px solid #75429a;
+    border-radius: 12px;
+}
+
+.titre-frise h2 {
+    font-size: 25px;
+    color: #e6c7ff;
+    margin: 0;
+}
+
+/* =====================================
+   FRISE CHRONOLOGIQUE
+===================================== */
+
+.frise {
+    position: relative;
+    max-width: 900px;
+    margin: auto;
+    padding: 10px 0;
+}
+
+/* Ligne centrale */
+
+.frise::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 3px;
+    transform: translateX(-50%);
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        #8738bd,
+        #bd65e9,
+        #8738bd,
+        transparent
+    );
+    box-shadow: 0 0 15px #bd65e960;
+}
+
+/* Chaque étape */
+
+.etape {
+    position: relative;
+    width: 50%;
+    padding: 20px 40px;
+}
+
+/* Alternance gauche / droite */
+
+.etape:nth-child(odd) {
+    left: 0;
+    text-align: right;
+}
+
+.etape:nth-child(even) {
+    left: 50%;
+    text-align: left;
+}
+
+/* Points sur la frise */
+
+.point-frise {
+    position: absolute;
+    top: 38px;
+    width: 17px;
+    height: 17px;
+    background: #bd65e9;
+    border: 4px solid #100d1b;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px #8738bd,
+                0 0 18px #bd65e9;
+    z-index: 2;
+}
+
+.etape:nth-child(odd) .point-frise {
+    right: -9px;
+}
+
+.etape:nth-child(even) .point-frise {
+    left: -9px;
+}
+
+/* Cartes */
+
+.carte-parcours {
+    position: relative;
+    padding: 25px;
+    background: linear-gradient(
+        145deg,
+        #21172f,
+        #191323
+    );
+
+    border: 1px solid #49305e;
+    border-radius: 18px;
+
+    box-shadow: 0 8px 25px #00000030;
+
+    transition: 0.35s ease;
+}
+
+.carte-parcours:hover {
+    transform: translateY(-7px);
+    border-color: #bd65e9;
+    box-shadow: 0 10px 30px #8738bd40;
+}
+
+/* Dates */
+
+.date-parcours {
+    display: inline-block;
+    padding: 7px 13px;
+    margin-bottom: 15px;
+
+    background: #8738bd30;
+    border: 1px solid #8738bd;
+    border-radius: 20px;
+
+    color: #d69aff;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Textes des cartes */
+
+.carte-parcours h3 {
+    color: #e6c7ff;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.carte-parcours p {
+    color: #c9bfd6;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+/* Lieu */
+
+.lieu-parcours {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: #bd65e9 !important;
+    font-size: 13px !important;
+}
+
+.etape:nth-child(odd) .lieu-parcours {
+    justify-content: flex-end;
+}
+
+.lieu-parcours i {
+    width: 15px;
+    height: 15px;
+}
+
+/* Petites étiquettes */
+
+.tag-parcours {
+    display: inline-block;
+    margin: 5px 3px 0 0;
+    padding: 6px 11px;
+
+    background: #bd65e920;
+    color: #d69aff;
+
+    border-radius: 20px;
+    font-size: 11px;
+}
+
+/* =====================================
+   QUALITES ET LOISIRS
+===================================== */
+
+.infos-parcours {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+.info-bloc {
+    padding: 30px;
+    background: #21172f;
+    border: 1px solid #49305e;
+    border-radius: 18px;
+    transition: 0.3s;
+}
+
+.info-bloc:hover {
+    border-color: #bd65e9;
+    transform: translateY(-5px);
+}
+
+.info-bloc > i {
+    width: 30px;
+    height: 30px;
+    color: #bd65e9;
+    margin-bottom: 15px;
+}
+
+.info-bloc h3 {
+    color: #e6c7ff;
+    margin-bottom: 20px;
+}
+
+.tags-qualites {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tags-qualites span {
+    padding: 9px 14px;
+    background: #8738bd30;
+    border: 1px solid #75429a;
+    border-radius: 20px;
+    color: #e6c7ff;
+    font-size: 13px;
+}
+
+/* =====================================
+   ANIMATION
+===================================== */
+
+@keyframes apparition-frise {
+    from {
+        opacity: 0;
+        transform: translateY(35px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.etape {
+    animation: apparition-frise 0.7s ease both;
+}
+
+.etape:nth-child(2) {
+    animation-delay: 0.15s;
+}
+
+.etape:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.etape:nth-child(4) {
+    animation-delay: 0.45s;
+}
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+@media screen and (max-width: 900px) {
+
+    .page-parcours {
+        padding: 50px 25px;
+    }
+
+    .intro-parcours h1 {
+        font-size: 35px;
+    }
+
+    .frise::before {
+        left: 10px;
+    }
+
+    .etape,
+    .etape:nth-child(odd),
+    .etape:nth-child(even) {
+        width: 100%;
+        left: 0;
+        padding: 15px 0 15px 40px;
+        text-align: left;
+    }
+
+    .etape:nth-child(odd) .point-frise,
+    .etape:nth-child(even) .point-frise {
+        left: 2px;
+        right: auto;
+    }
+
+    .etape:nth-child(odd) .lieu-parcours {
+        justify-content: flex-start;
+    }
+
+    .infos-parcours {
+        grid-template-columns: 1fr;
+    }
+
+    .titre-frise h2 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .page-parcours {
+        padding: 40px 18px;
+    }
+
+    .carte-parcours {
+        padding: 20px;
+    }
+
+    .carte-parcours h3 {
+        font-size: 16px;
+    }
+
+    .titre-frise {
+        gap: 10px;
+    }
+
+    .titre-frise h2 {
+        font-size: 18px;
+    }
+}
+
+
+/* =====================================
+   PAGE VEILLE TECHNOLOGIQUE
+===================================== */
+
+.page-veille {
+    padding: 65px 7%;
+}
+
+/* INTRODUCTION */
+
+.intro-veille {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 55px;
+}
+
+.intro-veille h1 {
+    font-size: 42px;
+    color: #d69aff;
+    margin: 15px 0;
+}
+
+.intro-veille p:not(.sous-titre) {
+    color: #c9bfd6;
+    line-height: 1.8;
+}
+
+/* =====================================
+   PRESENTATION REALITE VIRTUELLE
+===================================== */
+
+.presentation-vr {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 35px;
+
+    padding: 35px;
+    margin-bottom: 65px;
+
+    background: linear-gradient(
+        135deg,
+        #281a3b,
+        #191323
+    );
+
+    border: 1px solid #75429a;
+    border-radius: 25px;
+
+    box-shadow: 0 10px 35px #8738bd25;
+}
+
+.texte-vr h2 {
+    font-size: 30px;
+    color: #e6c7ff;
+    margin: 20px 0;
+}
+
+.texte-vr p {
+    color: #c9bfd6;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.etiquette-vr {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 8px 15px;
+
+    background: #8738bd30;
+    border: 1px solid #8738bd;
+    border-radius: 25px;
+
+    color: #d69aff;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.etiquette-vr i {
+    width: 17px;
+    height: 17px;
+}
+
+/* IMAGE VR */
+
+.image-vr {
+    overflow: hidden;
+    border-radius: 20px;
+    border: 2px solid #8738bd;
+    box-shadow: 0 0 30px #8738bd50;
+}
+
+.image-vr img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.image-vr img:hover {
+    transform: scale(1.07);
+}
+
+/* =====================================
+   TITRES DES SECTIONS
+===================================== */
+
+.titre-veille {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    margin: 55px 0 30px;
+}
+
+.titre-veille > i {
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+
+    color: #d69aff;
+    background: #2a1b3d;
+
+    border: 1px solid #75429a;
+    border-radius: 12px;
+}
+
+.titre-veille h2 {
+    color: #e6c7ff;
+    font-size: 24px;
+    margin: 0;
+}
+
+/* =====================================
+   GRILLE DES DOMAINES
+===================================== */
+
+.grille-veille {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+.carte-veille {
+    padding: 28px;
+
+    background: linear-gradient(
+        145deg,
+        #21172f,
+        #191323
+    );
+
+    border: 1px solid #49305e;
+    border-radius: 18px;
+
+    transition: 0.35s;
+}
+
+.carte-veille:hover {
+    transform: translateY(-7px);
+    border-color: #bd65e9;
+    box-shadow: 0 10px 30px #8738bd35;
+}
+
+.icone-veille {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 50px;
+    height: 50px;
+
+    margin-bottom: 20px;
+
+    color: #d69aff;
+    background: #8738bd30;
+
+    border: 1px solid #75429a;
+    border-radius: 14px;
+}
+
+.icone-veille i {
+    width: 25px;
+    height: 25px;
+}
+
+.carte-veille h3,
+.carte-veille-large h3 {
+    color: #e6c7ff;
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.carte-veille p,
+.carte-veille-large p {
+    color: #c9bfd6;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 12px;
+}
+
+/* =====================================
+   GRANDES CARTES
+===================================== */
+
+.carte-veille-large {
+    padding: 30px;
+
+    background: #21172f;
+
+    border: 1px solid #49305e;
+    border-radius: 18px;
+
+    transition: 0.3s;
+}
+
+.carte-veille-large:hover {
+    border-color: #bd65e9;
+    box-shadow: 0 10px 30px #8738bd25;
+}
+
+/* =====================================
+   SOURCES
+===================================== */
+
+.sources-veille {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.sources-veille a {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    padding: 22px;
+
+    background: #21172f;
+    border: 1px solid #49305e;
+    border-radius: 16px;
+
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.sources-veille a:hover {
+    transform: translateY(-5px);
+    border-color: #bd65e9;
+    background: #2a1b3d;
+}
+
+.sources-veille a > i {
+    width: 25px;
+    height: 25px;
+    color: #bd65e9;
+    flex-shrink: 0;
+}
+
+.sources-veille h3 {
+    color: #e6c7ff;
+    margin-bottom: 7px;
+}
+
+.sources-veille p {
+    color: #c9bfd6;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+/* =====================================
+   ANIMATIONS
+===================================== */
+
+@keyframes apparition-veille {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.presentation-vr,
+.carte-veille,
+.carte-veille-large,
+.sources-veille {
+    animation: apparition-veille 0.7s ease both;
+}
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+@media screen and (max-width: 900px) {
+
+    .page-veille {
+        padding: 45px 25px;
+    }
+
+    .presentation-vr {
+        grid-template-columns: 1fr;
+    }
+
+    .image-vr img {
+        height: 280px;
+    }
+
+    .intro-veille h1 {
+        font-size: 34px;
+    }
+
+    .grille-veille {
+        grid-template-columns: 1fr;
+    }
+
+    .sources-veille {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .page-veille {
+        padding: 35px 18px;
+    }
+
+    .presentation-vr {
+        padding: 22px;
+    }
+
+    .texte-vr h2 {
+        font-size: 25px;
+    }
+
+    .titre-veille h2 {
+        font-size: 19px;
+    }
+
+    .image-vr img {
+        height: 210px;
+    }
+}
+
+/* Le footer est à l'intérieur de main sur cette page */
+
+main > footer {
+    margin-left: 0;
+}
+
+
+/* =====================================
+   PAGE COMPETENCES
+===================================== */
+
+.page-competences {
+    padding: 65px 7%;
+}
+
+/* INTRODUCTION */
+
+.intro-competences {
+    max-width: 750px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+.intro-competences h1 {
+    font-size: 42px;
+    margin: 15px 0 20px;
+
+    background: linear-gradient(
+        90deg,
+        #d69aff,
+        #bd65e9
+    );
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.intro-competences > p:not(.sous-titre) {
+    color: #c9bfd6;
+    line-height: 1.8;
+}
+
+/* BADGE SLAM */
+
+.badge-slam {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-top: 25px;
+    padding: 11px 20px;
+
+    color: #d69aff;
+    background: #8738bd25;
+
+    border: 1px solid #8738bd;
+    border-radius: 30px;
+
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.badge-slam i {
+    width: 18px;
+    height: 18px;
+}
+
+/* TITRES DES SECTIONS */
+
+.titre-competences {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    margin: 55px 0 30px;
+}
+
+.titre-competences > i {
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+
+    color: #d69aff;
+    background: #2a1b3d;
+
+    border: 1px solid #75429a;
+    border-radius: 12px;
+}
+
+.titre-competences h2 {
+    color: #e6c7ff;
+    font-size: 23px;
+    margin: 0;
+}
+
+/* GRILLE */
+
+.grille-competences {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+/* CARTES */
+
+.competence-card {
+    position: relative;
+    overflow: hidden;
+
+    padding: 27px;
+
+    background: linear-gradient(
+        145deg,
+        #241932,
+        #191323
+    );
+
+    border: 1px solid #49305e;
+    border-radius: 20px;
+
+    transition: 0.35s ease;
+}
+
+/* Lumière décorative */
+
+.competence-card::before {
+    content: "";
+    position: absolute;
+
+    width: 130px;
+    height: 130px;
+
+    top: -65px;
+    right: -65px;
+
+    background: #bd65e9;
+    filter: blur(75px);
+    opacity: 0.12;
+
+    transition: 0.4s;
+}
+
+.competence-card:hover {
+    transform: translateY(-8px);
+
+    border-color: #bd65e9;
+
+    box-shadow: 0 12px 35px #8738bd35;
+}
+
+.competence-card:hover::before {
+    opacity: 0.35;
+}
+
+/* HAUT DES CARTES */
+
+.competence-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 25px;
+}
+
+.competence-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 55px;
+    height: 55px;
+
+    border-radius: 16px;
+
+    transition: 0.3s;
+}
+
+.competence-icon i {
+    width: 27px;
+    height: 27px;
+}
+
+.competence-card:hover .competence-icon {
+    transform: rotate(-5deg) scale(1.08);
+}
+
+/* Couleurs des icônes */
+
+.html-icon {
+    color: #ff9b75;
+    background: #ff7b4220;
+    border: 1px solid #ff7b4250;
+}
+
+.css-icon {
+    color: #75baff;
+    background: #398bff20;
+    border: 1px solid #398bff50;
+}
+
+.js-icon {
+    color: #f7dc72;
+    background: #e8cb4020;
+    border: 1px solid #e8cb4050;
+}
+
+.python-icon {
+    color: #85c8ff;
+    background: #458bce20;
+    border: 1px solid #458bce50;
+}
+
+.sql-icon {
+    color: #bd9aff;
+    background: #8738bd25;
+    border: 1px solid #8738bd60;
+}
+
+/* TYPE DE COMPETENCE */
+
+.competence-type {
+    color: #bd9bd7;
+    font-size: 10px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-align: right;
+}
+
+/* TEXTES */
+
+.competence-card h3 {
+    color: #e6c7ff;
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+.competence-card p {
+    color: #c9bfd6;
+    font-size: 14px;
+    line-height: 1.8;
+    min-height: 75px;
+}
+
+/* ETIQUETTES */
+
+.competence-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    margin-top: 20px;
+}
+
+.competence-tags span {
+    padding: 7px 11px;
+
+    background: #8738bd25;
+    border: 1px solid #75429a80;
+    border-radius: 20px;
+
+    color: #d6b2f0;
+    font-size: 11px;
+}
+
+/* =====================================
+   OUTILS DE DEVELOPPEMENT
+===================================== */
+
+.outils-competences {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.outil-card {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    padding: 23px;
+
+    background: #21172f;
+    border: 1px solid #49305e;
+    border-radius: 17px;
+
+    transition: 0.3s;
+}
+
+.outil-card:hover {
+    transform: translateY(-5px);
+    border-color: #bd65e9;
+    box-shadow: 0 8px 25px #8738bd25;
+}
+
+.outil-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 48px;
+    height: 48px;
+
+    color: #d69aff;
+    background: #8738bd30;
+
+    border: 1px solid #75429a;
+    border-radius: 13px;
+}
+
+.outil-icon i {
+    width: 23px;
+    height: 23px;
+}
+
+.outil-card h3 {
+    color: #e6c7ff;
+    font-size: 16px;
+    margin-bottom: 7px;
+}
+
+.outil-card p {
+    color: #c9bfd6;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+/* =====================================
+   CONCLUSION
+===================================== */
+
+.conclusion-competences {
+    text-align: center;
+
+    max-width: 750px;
+    margin: 65px auto 10px;
+    padding: 40px;
+
+    background: linear-gradient(
+        135deg,
+        #2a1b3d,
+        #191323
+    );
+
+    border: 1px solid #75429a;
+    border-radius: 22px;
+
+    box-shadow: 0 0 30px #8738bd20;
+}
+
+.conclusion-competences > i {
+    width: 38px;
+    height: 38px;
+    color: #d69aff;
+    margin-bottom: 15px;
+}
+
+.conclusion-competences h2 {
+    color: #e6c7ff;
+    margin-bottom: 15px;
+}
+
+.conclusion-competences p {
+    color: #c9bfd6;
+    line-height: 1.8;
+}
+
+/* =====================================
+   ANIMATIONS
+===================================== */
+
+@keyframes apparition-competence {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.competence-card {
+    animation: apparition-competence 0.7s ease both;
+}
+
+.competence-card:nth-child(2) {
+    animation-delay: 0.12s;
+}
+
+.competence-card:nth-child(3) {
+    animation-delay: 0.24s;
+}
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+@media screen and (max-width: 1100px) {
+
+    .grille-competences {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+
+    .page-competences {
+        padding: 45px 25px;
+    }
+
+    .intro-competences h1 {
+        font-size: 34px;
+    }
+
+    .outils-competences {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+
+    .page-competences {
+        padding: 35px 18px;
+    }
+
+    .grille-competences {
+        grid-template-columns: 1fr;
+    }
+
+    .titre-competences h2 {
+        font-size: 19px;
+    }
+
+    .competence-card {
+        padding: 23px;
+    }
+
+    .competence-card p {
+        min-height: auto;
+    }
+
+    .conclusion-competences {
+        padding: 27px 20px;
+    }
+
+}
+
+
+/* =====================================
+   NOUVELLES ICÔNES COMPETENCES
+===================================== */
+
+/* PHP */
+
+.php-icon {
+    color: #a99bff;
+    background: #777bb420;
+    border: 1px solid #777bb450;
+}
+
+/* JAVA */
+
+.java-icon {
+    color: #ffad75;
+    background: #ed873020;
+    border: 1px solid #ed873050;
+}
+
+/* LARAVEL */
+
+.laravel-icon {
+    color: #ff8585;
+    background: #ff454520;
+    border: 1px solid #ff454550;
+}
+

@@ -1,119 +1,445 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 
 <head>
-    <meta charset="utf-8">
-    <title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes compétences - Portfolio</title>
     <link href="style/style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
+
+    <header>
+        <h2>Mon Portfolio</h2>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <i data-lucide="house"></i>
+                        Accueil
+                    </a>
+                </li>
+
+                <li>
+                    <a href="profil.html">
+                        <i data-lucide="user-round"></i>
+                        Profil et parcours
+                    </a>
+                </li>
+
+                <li>
+                    <a href="competences.html" class="active">
+                        <i data-lucide="code-xml"></i>
+                        Compétences
+                    </a>
+                </li>
+
+                <li>
+                    <a href="projets.html">
+                        <i data-lucide="folder-code"></i>
+                        Projets
+                    </a>
+                </li>
+
+                <li>
+                    <a href="veilleTechnologique.html">
+                        <i data-lucide="glasses"></i>
+                        Veille technologique
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
     <main>
 
-        <header>
-            <h2>Mon Portfolio</h2>
+        <section class="page-competences">
 
-            <nav>
-                <ul>
-                    <li>
-                        <a href="index.html">
-                            <i data-lucide="house"></i>
-                            Accueil
-                        </a>
-                    </li>
+            <!-- INTRODUCTION -->
 
-                    <li>
-                        <a href="profil.html">
-                            <i data-lucide="user-round"></i>
-                            Profil et parcours
-                        </a>
-                    </li>
+            <div class="intro-competences">
 
-                    <li>
-                        <a href="competences.html" class="active">
-                            <i data-lucide="code-xml"></i>
-                            Compétences
-                        </a>
-                    </li>
+                <p class="sous-titre">MES CONNAISSANCES</p>
 
-                    <li>
-                        <a href="projets.html">
-                            <i data-lucide="folder-code"></i>
-                            Projets
-                        </a>
-                    </li>
+                <h1>Mes compétences informatiques</h1>
 
-                    <li>
-                        <a href="veilleTechnologique.html">
-                            <i data-lucide="glasses"></i>
-                            Veille technologique
-                        </a>
-                    </li>
+                <p>
+                    Durant ma formation en BTS SIO option SLAM,
+                    j'ai pu découvrir et utiliser différentes
+                    technologies, différents langages de programmation
+                    et plusieurs outils de développement.
+                </p>
 
-                </ul>
-            </nav>
-        </header>
-
-        <section class="contenu-page">
-
-            <p class="sous-titre">MES CONNAISSANCES</p>
-            <h1>Mes compétences informatiques</h1>
-
-            <p>
-                Durant ma formation en BTS SIO SLAM, j'ai pu
-                découvrir plusieurs technologies et langages
-                de programmation.
-            </p>
-
-            <div class="grille">
-
-                <div class="carte">
-                    <h2>HTML</h2>
-                    <p>Structuration et création de pages web.</p>
-                </div>
-
-                <div class="carte">
-                    <h2>CSS</h2>
-                    <p>Mise en forme et design de sites internet.</p>
-                </div>
-
-                <div class="carte">
-                    <h2>Python</h2>
-                    <p>Programmation et développement de scripts.</p>
-                </div>
-
-                <div class="carte">
-                    <h2>SQL</h2>
-                    <p>Gestion et interrogation de bases de données.</p>
-                </div>
-
-                <div class="carte">
-                    <h2>JavaScript</h2>
-                    <p>Création d'interactions sur les sites web.</p>
-                </div>
-
-                <div class="carte">
-                    <h2>Git / GitHub</h2>
-                    <p>Gestion des versions et suivi des projets.</p>
+                <div class="badge-slam">
+                    <i data-lucide="code-xml"></i>
+                    BTS SIO - OPTION SLAM
                 </div>
 
             </div>
 
-            <div class="carte">
-                <h2>Environnement de travail</h2>
+
+
+            <!-- LANGAGES DE PROGRAMMATION -->
+
+            <div class="titre-competences">
+                <i data-lucide="code-xml"></i>
+                <h2>Langages de programmation</h2>
+            </div>
+
+            <div class="grille-competences">
+
+                <!-- HTML -->
+                <article class="competence-card">
+                    <div class="competence-top">
+                        <div class="competence-icon html-icon">
+                            <i data-lucide="code"></i>
+                        </div>
+                        <span class="competence-type">WEB</span>
+                    </div>
+                    <h3>HTML</h3>
+                    <p>
+                        Structuration et création de pages web
+                        à l'aide de balises HTML.
+                    </p>
+                    <div class="competence-tags">
+                        <span>Structure</span>
+                        <span>Balises</span>
+                        <span>Web</span>
+                    </div>
+                </article>
+
+                <!-- CSS -->
+                <article class="competence-card">
+                    <div class="competence-top">
+                        <div class="competence-icon css-icon">
+                            <i data-lucide="palette"></i>
+                        </div>
+                        <span class="competence-type">WEB</span>
+                    </div>
+                    <h3>CSS</h3>
+                    <p>
+                        Mise en forme, personnalisation et création
+                        de designs pour les sites internet.
+                    </p>
+                    <div class="competence-tags">
+                        <span>Design</span>
+                        <span>Mise en page</span>
+                        <span>Responsive</span>
+                    </div>
+                </article>
+
+                <!-- JAVASCRIPT -->
+                <article class="competence-card">
+                    <div class="competence-top">
+                        <div class="competence-icon js-icon">
+                            <i data-lucide="braces"></i>
+                        </div>
+                        <span class="competence-type">PROGRAMMATION</span>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <p>
+                        Création d'interactions et de fonctionnalités
+                        dynamiques sur les sites web.
+                    </p>
+                    <div class="competence-tags">
+                        <span>Interactions</span>
+                        <span>Dynamique</span>
+                    </div>
+                </article>
+
+                <!-- PHP -->
+                <article class="competence-card">
+                    <div class="competence-top">
+                        <div class="competence-icon php-icon">
+                            <i data-lucide="file-code"></i>
+                        </div>
+                        <span class="competence-type">BACK-END</span>
+                    </div>
+                    <h3>PHP</h3>
+                    <p>
+                        Développement de fonctionnalités côté serveur,
+                        traitement des formulaires et échanges
+                        avec les bases de données.
+                    </p>
+                    <div class="competence-tags">
+                        <span>Back-end</span>
+                        <span>Serveur</span>
+                        <span>BDD</span>
+                    </div>
+                </article>
+
+                <!-- PYTHON -->
+                <article class="competence-card">
+                    <div class="competence-top">
+                        <div class="competence-icon python-icon">
+                            <i data-lucide="terminal"></i>
+                        </div>
+                        <span class="competence-type">PROGRAMMATION</span>
+                    </div>
+                    <h3>Python</h3>
+                    <p>
+                        Programmation informatique et développement
+                        de scripts pour réaliser différentes tâches.
+                    </p>
+                    <div class="competence-tags">
+                        <span>Scripts</span>
+                        <span>Algorithmes</span>
+                    </div>
+                </article>
+
+                <!-- JAVA -->
+                <article class="competence-card">
+                    <div class="competence-top">
+                        <div class="competence-icon java-icon">
+                            <i data-lucide="coffee"></i>
+                        </div>
+                        <span class="competence-type">PROGRAMMATION</span>
+                    </div>
+                    <h3>Java</h3>
+                    <p>
+                        Développement d'applications et programmation
+                        orientée objet à l'aide du langage Java.
+                    </p>
+                    <div class="competence-tags">
+                        <span>POO</span>
+                        <span>Applications</span>
+                        <span>Algorithmes</span>
+                    </div>
+                </article>
+
+                <!-- SQL -->
+                <article class="competence-card">
+                    <div class="competence-top">
+                        <div class="competence-icon sql-icon">
+                            <i data-lucide="database"></i>
+                        </div>
+                        <span class="competence-type">BASE DE DONNÉES</span>
+                    </div>
+                    <h3>SQL</h3>
+                    <p>
+                        Gestion, organisation et interrogation
+                        de bases de données relationnelles.
+                    </p>
+                    <div class="competence-tags">
+                        <span>Requêtes</span>
+                        <span>Données</span>
+                        <span>BDD</span>
+                    </div>
+                </article>
+
+            </div>
+
+
+
+            <!-- FRAMEWORKS -->
+
+            <div class="titre-competences">
+                <i data-lucide="layers"></i>
+                <h2>Frameworks</h2>
+            </div>
+
+            <div class="grille-competences">
+
+                <article class="competence-card">
+
+                    <div class="competence-top">
+                        <div class="competence-icon laravel-icon">
+                            <i data-lucide="layers"></i>
+                        </div>
+                        <span class="competence-type">PHP / BACK-END</span>
+                    </div>
+
+                    <h3>Laravel</h3>
+
+                    <p>
+                        Framework PHP permettant de développer
+                        des applications web structurées en utilisant
+                        notamment l'architecture MVC.
+                    </p>
+
+                    <div class="competence-tags">
+                        <span>MVC</span>
+                        <span>PHP</span>
+                        <span>Applications web</span>
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- LOGICIELS DE DEVELOPPEMENT -->
+
+            <div class="titre-competences">
+                <i data-lucide="monitor"></i>
+                <h2>Environnements et logiciels de développement</h2>
+            </div>
+
+            <div class="outils-competences">
+
+                <div class="outil-card">
+                    <div class="outil-icon">
+                        <i data-lucide="code-2"></i>
+                    </div>
+
+                    <div>
+                        <h3>Visual Studio Code</h3>
+                        <p>
+                            Éditeur de code et environnement
+                            de développement.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="outil-card">
+                    <div class="outil-icon">
+                        <i data-lucide="github"></i>
+                    </div>
+
+                    <div>
+                        <h3>Git / GitHub</h3>
+                        <p>
+                            Gestion des versions et suivi
+                            des projets informatiques.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="outil-card">
+                    <div class="outil-icon">
+                        <i data-lucide="server"></i>
+                    </div>
+
+                    <div>
+                        <h3>WampServer</h3>
+                        <p>
+                            Environnement de serveur web local
+                            pour développer et tester des applications PHP.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="outil-card">
+                    <div class="outil-icon">
+                        <i data-lucide="server"></i>
+                    </div>
+
+                    <div>
+                        <h3>Laragon</h3>
+                        <p>
+                            Environnement de développement local
+                            pour exécuter des applications web.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="outil-card">
+                    <div class="outil-icon">
+                        <i data-lucide="database"></i>
+                    </div>
+
+                    <div>
+                        <h3>phpMyAdmin</h3>
+                        <p>
+                            Interface web permettant de gérer
+                            des bases de données MySQL et MariaDB.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="outil-card">
+                    <div class="outil-icon">
+                        <i data-lucide="database"></i>
+                    </div>
+
+                    <div>
+                        <h3>DBeaver</h3>
+                        <p>
+                            Logiciel de gestion et d'administration
+                            de bases de données.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- CONCEPTION DES BASES DE DONNEES -->
+
+            <div class="titre-competences">
+                <i data-lucide="workflow"></i>
+                <h2>Conception et modélisation des bases de données</h2>
+            </div>
+
+            <div class="outils-competences">
+
+                <div class="outil-card">
+                    <div class="outil-icon">
+                        <i data-lucide="network"></i>
+                    </div>
+
+                    <div>
+                        <h3>Looping</h3>
+                        <p>
+                            Conception et modélisation de bases de données
+                            à l'aide de modèles conceptuels de données (MCD).
+                        </p>
+                    </div>
+                </div>
+
+                <div class="outil-card">
+                    <div class="outil-icon">
+                        <i data-lucide="network"></i>
+                    </div>
+
+                    <div>
+                        <h3>WinDesign</h3>
+                        <p>
+                            Modélisation et conception de systèmes
+                            d'information, notamment à travers
+                            la réalisation de MCD.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- CONCLUSION -->
+
+            <div class="conclusion-competences">
+
+                <i data-lucide="rocket"></i>
+
+                <h2>En constante progression</h2>
+
                 <p>
-                    Utilisation d'outils de développement comme
-                    Visual Studio Code, ainsi que des outils
-                    de gestion de bases de données.
+                    Au fil de ma formation, je continue à découvrir
+                    de nouvelles technologies et à développer
+                    mes compétences à travers différents projets.
+                    Ces connaissances me permettent de progresser
+                    dans le développement d'applications web
+                    et la gestion de bases de données.
                 </p>
+
             </div>
 
         </section>
+
+        <footer>
+            <p>2026 - Mon Portfolio</p>
+        </footer>
+
     </main>
+
     <script src="https://unpkg.com/lucide@latest"></script>
-	<script>
-		lucide.createIcons();
-	</script>
+
+    <script>
+        lucide.createIcons();
+    </script>
+
 </body>
 
 </html>

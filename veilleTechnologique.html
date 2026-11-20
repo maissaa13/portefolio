@@ -1,98 +1,192 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 
 <head>
-    <meta charset="utf-8">
-    <title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veille technologique - Portfolio</title>
     <link href="style/style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
+
+    <header>
+        <h2>Mon Portfolio</h2>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <i data-lucide="house"></i>
+                        Accueil
+                    </a>
+                </li>
+
+                <li>
+                    <a href="profil.html">
+                        <i data-lucide="user-round"></i>
+                        Profil et parcours
+                    </a>
+                </li>
+
+                <li>
+                    <a href="competences.html">
+                        <i data-lucide="code-xml"></i>
+                        Compétences
+                    </a>
+                </li>
+
+                <li>
+                    <a href="projets.html">
+                        <i data-lucide="folder-code"></i>
+                        Projets
+                    </a>
+                </li>
+
+                <li>
+                    <a href="veilleTechnologique.html" class="active">
+                        <i data-lucide="glasses"></i>
+                        Veille technologique
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
     <main>
 
-        <header>
-            <h2>Mon Portfolio</h2>
+        <section class="page-veille">
 
-            <nav>
-                <ul>
-                    <li>
-                        <a href="index.html">
-                            <i data-lucide="house"></i>
-                            Accueil
-                        </a>
-                    </li>
+            <!-- INTRODUCTION -->
 
-                    <li>
-                        <a href="profil.html">
-                            <i data-lucide="user-round"></i>
-                            Profil et parcours
-                        </a>
-                    </li>
+            <div class="intro-veille">
 
-                    <li>
-                        <a href="competences.html">
-                            <i data-lucide="code-xml"></i>
-                            Compétences
-                        </a>
-                    </li>
+                <p class="sous-titre">INNOVATION NUMÉRIQUE</p>
 
-                    <li>
-                        <a href="projets.html">
-                            <i data-lucide="folder-code"></i>
-                            Projets
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="veilleTechnologique.html" class="active">
-                            <i data-lucide="glasses"></i>
-                            Veille technologique
-                        </a>
-                    </li>
-
-                </ul>
-            </nav>
-        </header>
-
-        <section class="contenu-page">
-
-            <p class="sous-titre">INNOVATION NUMÉRIQUE</p>
-            <h1>Veille technologique</h1>
-
-            <div class="carte">
-                <h2>Mon sujet : la réalité virtuelle</h2>
+                <h1>Veille technologique</h1>
 
                 <p>
-                    La réalité virtuelle (VR) est une technologie
-                    permettant de plonger une personne dans un
-                    environnement numérique immersif en trois dimensions.
+                    Découvrez ma veille technologique consacrée
+                    à la réalité virtuelle et à ses évolutions.
                 </p>
 
-                <p>
-                    À l'aide d'un casque VR et de contrôleurs,
-                    l'utilisateur peut observer et interagir
-                    avec un environnement virtuel.
-                </p>
             </div>
 
-            <div class="carte">
+            <!-- PRESENTATION VR -->
+
+            <div class="presentation-vr">
+
+                <div class="texte-vr">
+
+                    <span class="etiquette-vr">
+                        <i data-lucide="headset"></i>
+                        MON SUJET
+                    </span>
+
+                    <h2>La réalité virtuelle</h2>
+
+                    <p>
+                        La réalité virtuelle (VR) est une technologie
+                        permettant de plonger une personne dans un
+                        environnement numérique immersif en trois dimensions.
+                    </p>
+
+                    <p>
+                        À l'aide d'un casque VR et de contrôleurs,
+                        l'utilisateur peut observer et interagir
+                        avec un environnement virtuel.
+                    </p>
+
+                </div>
+
+                <div class="image-vr">
+                    <img src="img/vr.jpg"
+                         alt="Illustration de la réalité virtuelle">
+                </div>
+
+            </div>
+
+            <!-- DOMAINES D'UTILISATION -->
+
+            <div class="titre-veille">
+                <i data-lucide="layers"></i>
                 <h2>Les domaines d'utilisation</h2>
-
-                <p><strong>Jeux vidéo :</strong> immersion dans des
-                    univers virtuels interactifs.</p>
-
-                <p><strong>Médecine :</strong> simulation d'opérations
-                    et formation des professionnels.</p>
-
-                <p><strong>Éducation :</strong> apprentissage grâce
-                    à des environnements immersifs.</p>
-
-                <p><strong>Architecture :</strong> visualisation
-                    de bâtiments avant leur construction.</p>
             </div>
 
-            <div class="carte">
+            <div class="grille-veille">
+
+                <article class="carte-veille">
+                    <div class="icone-veille">
+                        <i data-lucide="gamepad-2"></i>
+                    </div>
+
+                    <h3>Jeux vidéo</h3>
+
+                    <p>
+                        Immersion dans des univers virtuels
+                        interactifs permettant aux joueurs
+                        de vivre une expérience plus réaliste.
+                    </p>
+                </article>
+
+                <article class="carte-veille">
+                    <div class="icone-veille">
+                        <i data-lucide="heart-pulse"></i>
+                    </div>
+
+                    <h3>Médecine</h3>
+
+                    <p>
+                        Simulation d'opérations et formation
+                        des professionnels de santé dans
+                        des environnements virtuels.
+                    </p>
+                </article>
+
+                <article class="carte-veille">
+                    <div class="icone-veille">
+                        <i data-lucide="graduation-cap"></i>
+                    </div>
+
+                    <h3>Éducation</h3>
+
+                    <p>
+                        Apprentissage grâce à des environnements
+                        immersifs permettant de découvrir
+                        de nouvelles situations.
+                    </p>
+                </article>
+
+                <article class="carte-veille">
+                    <div class="icone-veille">
+                        <i data-lucide="building-2"></i>
+                    </div>
+
+                    <h3>Architecture</h3>
+
+                    <p>
+                        Visualisation de bâtiments et de projets
+                        immobiliers avant même leur construction.
+                    </p>
+                </article>
+
+            </div>
+
+            <!-- EVOLUTIONS -->
+
+            <div class="titre-veille">
+                <i data-lucide="trending-up"></i>
                 <h2>Les évolutions technologiques</h2>
+            </div>
+
+            <div class="carte-veille-large">
+
+                <div class="icone-veille">
+                    <i data-lucide="cpu"></i>
+                </div>
+
+                <h3>Une technologie en constante évolution</h3>
 
                 <p>
                     Les casques de réalité virtuelle évoluent
@@ -106,10 +200,23 @@
                     évolution intéressante puisqu'elle permet
                     de mélanger des éléments virtuels et réels.
                 </p>
+
             </div>
 
-            <div class="carte">
+            <!-- ENJEUX -->
+
+            <div class="titre-veille">
+                <i data-lucide="shield-check"></i>
                 <h2>Les enjeux et les limites</h2>
+            </div>
+
+            <div class="carte-veille-large">
+
+                <div class="icone-veille">
+                    <i data-lucide="alert-circle"></i>
+                </div>
+
+                <h3>Les défis de la réalité virtuelle</h3>
 
                 <p>
                     Malgré ses avantages, la réalité virtuelle
@@ -117,36 +224,59 @@
                     le confort d'utilisation, les performances
                     informatiques et la protection des données.
                 </p>
+
             </div>
 
-            <div class="carte">
-                <h2>Sources de ma veille</h2>
+            <!-- SOURCES -->
 
-                <p>
-                    Je consulte régulièrement des sites spécialisés,
-                    des articles technologiques et les actualités
-                    des fabricants de casques VR.
-                </p>
+            <div class="titre-veille">
+                <i data-lucide="book-open"></i>
+                <h2>Mes sources de veille</h2>
+            </div>
 
-                <p>
-                    <a href="https://www.meta.com/fr/" target="_blank">
-                        Meta
-                    </a>
-                </p>
+            <div class="sources-veille">
 
-                <p>
-                    <a href="https://www.unity.com/" target="_blank">
-                        Unity
-                    </a>
-                </p>
+                <a href="https://www.meta.com/fr/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
+                    <i data-lucide="external-link"></i>
+
+                    <div>
+                        <h3>Meta</h3>
+                        <p>Actualités et technologies de réalité virtuelle.</p>
+                    </div>
+
+                </a>
+
+                <a href="https://unity.com/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
+                    <i data-lucide="external-link"></i>
+
+                    <div>
+                        <h3>Unity</h3>
+                        <p>Technologies et développement d'expériences immersives.</p>
+                    </div>
+
+                </a>
+
             </div>
 
         </section>
-    </main>
-    <script src="https://unpkg.com/lucide@latest"></script>
-	<script>
-		lucide.createIcons();
-	</script>
-</body>
 
+        <footer>
+            <p>2026 - Mon Portfolio</p>
+        </footer>
+
+    </main>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        lucide.createIcons();
+    </script>
+
+</body>
 </html>
